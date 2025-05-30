@@ -25,4 +25,4 @@ The objective was to convert a static desktop-only webpage into a **mobile-frien
 
 # Live Demo
 
-Click [vercel](https://elevate-labs-task4.vercel.app/)
+Click [vercel](https://elevate-labs-task4.vercel.app/) for live demo.
