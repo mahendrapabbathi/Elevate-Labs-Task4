@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 7rem;
+  background: #0a192f;
+  color: #fff;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 3.5rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80vh;
+  background:hsl(0, 0%, 3%);
+  text-align: center;
+  padding: 12rem;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.hero p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.cta-button {
+  padding: 0.8rem 2rem;
+  background: #0a192f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #4fd1c5;
+}
+
+.image-section img{
+  width: 400px;
+  height: 300px;
+}
+
+footer {
+  background: #0a192f;
+  color: #ccc;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.socials a {
+  margin:0 10px;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.socials a i{
+    font-size: 1.2rem;
+    margin-top:10px;
+}
+
+.socials a:hover {
+  color: #4fd1c5;
+}
+
+/* For Responsive Design adding media queries */
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo{
+    font-size: 1.3rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1rem;
+  }
+
+  .hero{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    height: 60vh;
+  }
+
+  .hero h1 {
+    font-size: 1.4rem;
+  }
+
+  .hero-content{
+    margin-bottom:3rem;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width:400px) {
+  .hero{
+    height: 85vh;
+  }
+  .image-section img{
+    width: 300px;
+    height: 250px;
+  }
+}
+
+@media (max-width:320px) {
+  .logo{
+    font-size: 1rem;
+  }
+  .nav-links{
+    font-size: 0.9rem;
+  }
+  .hero{
+    height: 120vh;
+  }
+  .image-section img{
+    width:300px;
+    height: 200px;
+  }
+  footer{
+     font-size: 12px;
+  }
+}
+
